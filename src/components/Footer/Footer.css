@@ -1,0 +1,24 @@
+footer{
+    display: flex;
+    padding:50px 40px;
+}
+.footer-item{
+    text-align:left ;
+    padding: 12px;
+    font-family: "Barlow",Arial,Helvetica,sans-serif;
+    line-height: 1.75em;
+    font-weight: 400;
+    padding: 24px;
+
+}
+.subscribe-button{
+    background-color: #2e88ce;
+    color: white;
+    border: none;
+    padding: 8px 30px;
+    font-family: Montserrat,Arial,Helvetica,sans-serif;
+    font-weight: 700;
+}
+.subscribe-button:hover{
+    background-image: linear-gradient(to bottom,#1976bc 50%,#8cc645c7 100%);
+}

@@ -4,9 +4,9 @@ import "./Header.css"
 
 const Header = () => {
     return (
-        <div className='header'>
-            <Navbar expand="lg">
-                <Container  >
+        <div>
+            <Navbar expand="lg" className='header'>
+                <Container >
                     <Navbar.Brand href="#">Travelicious</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
@@ -20,11 +20,9 @@ const Header = () => {
                             <Nav.Link >Contact</Nav.Link>
                             <Nav.Link >Login</Nav.Link>
                         </Nav>
-
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-
         </div>
     );
 };

@@ -1,7 +1,9 @@
 .header{
-    background-color: #b1d3f5;
-    color: white;
+    background-image: linear-gradient(to left,#248cdbc9 20%,#aee769a2 70%);
+    
+    font-size: large;
+   
 }
-.header Nav.Link{
-    color: white;
+b{
+    font-weight: 700;
 }
