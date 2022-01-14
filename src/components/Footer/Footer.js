@@ -44,16 +44,16 @@ const Footer = () => {
                                 <b>Our Newsletter</b>
 
                                 <p className='mt-3'>Subscribe to our newsletter and get exlusive first minute offers straight into your inbox.</p>
-                                <input className='p-2 mb-3' type="text" placeholder='Enter your Email Address' id="" />
+                                <input className='p-2 mb-3' type="email" placeholder='Enter your Email Address' id="" />
                             </div>
                             <button className='subscribe-button'>Subscribe</button>
-
                         </div>
-
-
                     </div>
-
                 </footer>
+                <div>
+                    <p>Developed by Musharrat Tabassum</p>
+                </div>
+
             </div>
         </div>
     );

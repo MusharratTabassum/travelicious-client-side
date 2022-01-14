@@ -22,3 +22,6 @@ footer{
 .subscribe-button:hover{
     background-image: linear-gradient(to bottom,#1976bc 50%,#8cc645c7 100%);
 }
+b{
+    font-weight: 700;
+}

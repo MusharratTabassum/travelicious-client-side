@@ -1,9 +1,8 @@
 .header{
-    background-image: linear-gradient(to left,#248cdbc9 20%,#aee769a2 70%);
-    
+    background-image: linear-gradient(to left,#248cdbc9 20%,#c2f584a2 70%);
     font-size: large;
-   
+ 
 }
-b{
-    font-weight: 700;
-}
+.banner-logo{
+    font-size:30px;
+   }
