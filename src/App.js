@@ -4,6 +4,7 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home/Home';
+import Login from './components/Login/Login/Login';
 import NotFound from './components/NotFound/NotFound';
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact></Contact>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
           </Route>
           <Route path="*">
             <NotFound></NotFound>

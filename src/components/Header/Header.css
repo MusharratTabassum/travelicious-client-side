@@ -1,8 +1,16 @@
 .header{
-    background-image: linear-gradient(to left,#248cdbc9 20%,#c2f584a2 70%);
+    background-color: #f1e14b;
     font-size: large;
+    color: black;
  
 }
 .banner-logo{
-    font-size:30px;
+    font-weight: 600;
+       color: black;
+       font-size: x-large;
    }
+   .header-link{
+       color: black ;
+       font-weight: 600;
+   }
+ 

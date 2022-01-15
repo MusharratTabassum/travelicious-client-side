@@ -1,6 +1,10 @@
 footer{
+    background-color: black;
+}
+.full-footer{
     display: flex;
     padding:50px 40px;
+   
 }
 .footer-item{
     text-align:left ;
@@ -9,19 +13,26 @@ footer{
     line-height: 1.75em;
     font-weight: 400;
     padding: 24px;
+    color: white;
 
 }
 .subscribe-button{
-    background-color: #2e88ce;
-    color: white;
+    background-color: #f1e14b;
+    color: black;
     border: none;
     padding: 8px 30px;
     font-family: Montserrat,Arial,Helvetica,sans-serif;
     font-weight: 700;
 }
 .subscribe-button:hover{
-    background-image: linear-gradient(to bottom,#1976bc 50%,#8cc645c7 100%);
+    background-image: linear-gradient(to bottom, #f1e14b 50%,rgba(255, 255, 255, 0.651) 100%);
 }
 b{
     font-weight: 700;
+    color: #f1e14b;
+}
+.developed{
+    color: #f1e14b;
+    background-color: black;
+    margin-bottom: 0px;
 }
