@@ -13,4 +13,18 @@
        color: black ;
        font-weight: 600;
    }
+   .nav-link{
+    padding: 0;
+   }
+   .logout-btn{
+    color: black;
+     background-color:#f1e14b; 
+     border: none;
+    
+     
+  
+  }
+  .logout-btn:hover{
+      background-color: #f1e14b;
+  }
  

@@ -60,7 +60,7 @@ const useFirebase = () => {
             return;
         }
         if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
-            setError('Password Must contain 2 upper case');
+            setError('password must contain 2 upper case');
             return;
         }
         else {
@@ -115,17 +115,17 @@ const useFirebase = () => {
 
     const handleUserLogin = (e) => {
         e.preventDefault();
-        console.log(email, password);
         if (password.length < 6) {
             setError("password should be more than 6 characters");
             return;
         }
         if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
-            setError('Password Must contain 2 upper case');
+            setError('password must contain 2 upper case');
             return;
         }
         else {
             loginProcess(email, password);
+
         }
     }
 
