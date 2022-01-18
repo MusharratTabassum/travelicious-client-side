@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import "./Login.css"
 import { Link } from 'react-router-dom';
-import useFirebase from "../../../Hooks/useFirebase";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import useAuth from '../../../Hooks/useAuth';
 
 const Login = () => {
     const { handleGoogleSignIn, handleEmailChange, handlePasswordChange,
-        error, handleUserLogin, handleResetPassword } = useFirebase();
+        error, handleUserLogin, handleResetPassword } = useAuth();
 
 
     useEffect(() => {

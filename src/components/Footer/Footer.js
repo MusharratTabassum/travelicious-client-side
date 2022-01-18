@@ -7,7 +7,7 @@ const Footer = () => {
             <footer className='container-fluid'>
                 <div className='row  full-footer '>
                     <div className="footer-item col-lg-2 col-md-6 ">
-                        <ul> <b>Destination</b></ul>
+                        <ul><b><h4>Destination</h4></b></ul>
                         <ul>Cox's Bazar</ul>
                         <ul>Sajek</ul>
                         <ul>Kuakata</ul>
@@ -15,7 +15,7 @@ const Footer = () => {
                         <ul>Saint Martine</ul>
                     </div>
                     <div className="footer-item col-lg-2 col-md-6">
-                        <ul> <b>Cities</b></ul>
+                        <ul> <b><h4>Cities</h4></b></ul>
                         <ul>Cox's Bazar</ul>
                         <ul>Sajek</ul>
                         <ul>Kuakata</ul>
@@ -23,7 +23,7 @@ const Footer = () => {
                         <ul>Saint Martine</ul>
                     </div>
                     <div className="footer-item col-lg-2 col-md-6">
-                        <ul> <b>Interests</b></ul>
+                        <ul> <b><h4>Interests</h4></b></ul>
                         <ul>Cox's Bazar</ul>
                         <ul>Sajek</ul>
                         <ul>Kuakata</ul>
@@ -31,7 +31,7 @@ const Footer = () => {
                         <ul>Saint Martine</ul>
                     </div>
                     <div className="footer-item col-lg-2 col-md-6">
-                        <ul> <b>About</b></ul>
+                        <ul> <b><h4>About</h4></b></ul>
                         <ul>Cox's Bazar</ul>
                         <ul>Sajek</ul>
                         <ul>Kuakata</ul>
@@ -40,7 +40,7 @@ const Footer = () => {
                     </div>
                     <div className="footer-item col-lg-4 col-md-6">
                         <div>
-                            <b>Our Newsletter</b>
+                            <b><h4>Our Newsletter</h4></b>
 
                             <p className='mt-3'>Subscribe to our newsletter and get exlusive first minute offers straight into your inbox.</p>
                             <input className='p-2 mb-3' type="email" placeholder='Enter your Email Address' id="" />
@@ -49,8 +49,6 @@ const Footer = () => {
                     </div>
                 </div>
                 <small className='developed'>Designed & Developed by Musharrat Tabassum</small>
-
-
             </footer>
 
 

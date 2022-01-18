@@ -1,15 +1,17 @@
 footer{
     background-color: black;
+   
 }
 .full-footer{
     display: flex;
     padding:50px 40px;
+    font-family:cursive;
    
 }
 .footer-item{
     text-align:left ;
     padding: 12px;
-    font-family: "Barlow",Arial,Helvetica,sans-serif;
+    font-family:cursive;
     line-height: 1.75em;
     font-weight: 400;
     padding: 24px;
@@ -21,8 +23,7 @@ footer{
     color: black;
     border: none;
     padding: 8px 30px;
-    font-family: Montserrat,Arial,Helvetica,sans-serif;
-    font-weight: 700;
+    font-family:cursive;    font-weight: 700;
 }
 .subscribe-button:hover{
     background-image: linear-gradient(to bottom, #f1e14b 50%,rgba(255, 255, 255, 0.651) 100%);
@@ -35,4 +36,5 @@ b{
     color: #f1e14b;
     background-color: black;
     margin-bottom: 0px;
+    font-family:cursive;
 }

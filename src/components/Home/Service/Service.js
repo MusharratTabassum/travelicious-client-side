@@ -1,29 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-
+import './Service.css'
 
 const Service = ({ service }) => {
     const { id, title, short_description, image } = service;
     return (
         <div>
-            <div className="col my-5">
-                <div className="card box ">
-                    <div><img src={image} className="card-img-top" alt="..." /></div>
-
-                    <div className="p-1">
+            <div className="col">
+                <div >
+                    <div className="card">
+                        <img src={image} className="card-img-top" alt="..." />
                         <div className="card-body">
-                            <h6 className="card-title title">{title}</h6>
-                            <p className="card-text text-align">{short_description}</p>
+                            <h5 className="card-title">{title}</h5>
+                            <p className="card-text">{short_description}</p>
                         </div>
-                        <div className="d-flex justify-content-end align-items-center">
-                            <button className="button-style" >+ More Details</button>
+                        <div class="card-footer ">
+                            <Link to={`/serviceDetail/${id}`}>
+                                <button>Book Now</button>
+                            </Link>
                         </div>
                     </div>
 
                 </div>
-            </div>
 
+            </div>
         </div>
     );
 };

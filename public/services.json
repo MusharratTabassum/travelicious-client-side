@@ -1,44 +1,44 @@
 [
     {
         "id": 1,
-        "title": "Dry Eye Surgery",
+        "title": "Jaflong",
         "short_description": "Dry eye syndrome, is a condition where the eyes do not make enough and quality tears, or the tears evaporate too quickly.Dry eyes occur when your ....",
         "description": "Dry eye syndrome, is a condition where the eyes do not make enough and quality tears, or the tears evaporate too quickly. Dry eyes occur when your tears aren't able to provide adequate nourishment for your cornea and keep moist your eyes and goes untreated or mistreated.To detect your deficit requires some costly tests, and reach Dry Eye Lab before it is too late!",
-        "image": "/images/service-images/service-1.jpg"
+        "image": "https://i.ibb.co/W5vZWxq/images.jpg"
     },
     {
         "id": 2,
-        "title": "Glaucoma & Cornea",
-        "short_description": "Glaucoma is a condition of the human eye where the optic nerve (the one that carries signals from the eye to the brain) gets damaged due to excessive ...",
+        "title": "Inani beach",
+        "short_description": "Inani beach is known as a wonderful beach for its corals which become green in summer and rainy season. The blue water, sunrise, and sunset will help you to make you a memorable trip.",
         "description": "Glaucoma is a condition of the human eye where the optic nerve (the one that carries signals from the eye to the brain) gets damaged due to excessive pressure inside your eye. Since the optic nerve is the primary carrier of visual stimulus to the brain, damage to it could actually result in significant loss of vision. Glaucoma generally affects both the eyes, although the pressure inside each eye could be different.We’ve been talking about this pressure building up inside your eyes for some time now. But why exactly would there be an increase in pressure, all of a sudden? So heres what happens inside your eyes. The human eye can be divided into two segments – the anterior chamber that’s in front of the lens and the posterior chamber that’s behind the lens. Now, in the anterior chamber, the space between the cornea and our natural lens is filled with a fluid called aqueous humor. This fluid (which contains nutrients for the eye) is generated in the anterior chamber and is drained out of the eye through a mesh-like structure. So as long as this production &amp; drainage equation is proportionate, there’s no problem. However, the slightest of changes to production/draining equilibrium could result in increased intraocular pressure (intraocular – inside the eye chamber). And the rest, you already know – pressure leads to damage of optic nerve which in turn leads to loss of vision. Wide-angle and narrow-angle are the two types of glaucoma that you’ll generally come across and both result in increased intraocular pressure.",
-        "image": "/images/service-images/service-2.jpg"
+        "image": "https://i.ibb.co/X3K4JXw/irani.jpg"
     },
     {
         "id": 3,
-        "title": "Retina Repair",
-        "short_description": "The retina is the innermost, thin layer of nerve cells that lines the back of the eye. The function of the retina is to convert the light into neural signals and send them to...",
+        "title": "Sitakundu",
+        "short_description": "Sitakundu is one of the oldest sites in Bangladesh.  If you want to soothe your mind then definitely enjoy the natural and charming beauty of sitakundu.",
         "description": "The retina is the innermost, thin layer of nerve cells that lines the back of the eye. The function of the retina is to convert the light into neural signals and send them to the brain for visual recognition. The retina is a vital tissue, and retinal disorders may severely affect the sight and cause blindness, if not treated on time.Retinal diseases are a range of disorders that affect the thin layer of tissue lining the back of the eye. The retina, which is responsible for receiving light and converting it into neural signals for the brain, is one of the most important parts of the eye.",
-        "image": "/images/service-images/service-3.jpg"
+        "image": "https://i.ibb.co/kcMW5jZ/sitakundu.jpg"
     },
     {
         "id": 4,
-        "title": "Laser Surgery",
-        "short_description": "Laser eye surgery, or laser vision correction, involves using lasers to reshape the front surface (cornea) of your eyes so that you can focus better...",
+        "title": "Sajek Valley",
+        "short_description": "If you want to see the land of the cloud in Bangladesh then you have to visit the queen of hills, Sajek Valley. Visiting this place will fulfill your dream of walking through the clouds.",
         "description": "Laser eye surgery, or laser vision correction, involves using lasers to reshape the front surface (cornea) of your eyes so that you can focus better. It can correct short-sightedness, long-sightedness and astigmatism.",
-        "image": "/images/service-images/service-4.jpg"
+        "image": "https://i.ibb.co/Hx7cHq7/sajek.jpg"
     },
     {
         "id": 5,
-        "title": "Eye Infection",
-        "short_description": "Some possible eye infections include conjunctivitis (where the conjunctiva becomes inflamed) ,blepharitis (affecting the eyelid), keratitis (the cornea), vitritis...",
+        "title": "Ratargul Forest",
+        "short_description": "Ratargul Swamp Forest is the only swamp forest in Bangladesh where you can enjoy different kinds of creatures.",
         "description": "Some possible eye infections include conjunctivitis (where the conjunctiva becomes inflamed), blepharitis (affecting the eyelid), keratitis (the cornea), vitritis (the liquid inside the eye), chorioretinitis (the retina and related blood vessels), or neuroetinitis (the optic nerve).Infectious conjunctivitis, which is usually caused by bacterial, viral, or fungal infection, is the most common form of eye infection. Other infections that can cause inflammation of different parts of the eye include STIs (such as syphilis and gonorrhea), tuberculosis, Lyme disease, certain parasites, or mycosis (a general term for a fungal infection).Avoid rubbing or touching your eyes. Regular washing of your hands is important to stop the infection from spreading. It is also a good idea to avoid sharing pillow cases, towels, and make-up.",
-        "image": "/images/service-images/service-5.jpg"
+        "image": "https://i.ibb.co/SfR5PX7/ratargul.jpg"
     },
     {
         "id": 6,
-        "title": "Cornea Transplant",
+        "title": "Chittagong Hill Track",
         "short_description": "A cornea transplant (keratoplasty) is a surgical procedure to replace part of your cornea with corneal tissue from a donor. Your cornea is the transparent... ",
         "description": "A cornea transplant (keratoplasty) is a surgical procedure to replace part of your cornea with corneal tissue from a donor. Your cornea is the transparent, dome-shaped surface of your eye. It's where light enters your eye and is a large part of your eye's ability to see clearly.A cornea transplant can restore vision, reduce pain, and improve the appearance of a damaged or diseased cornea.Most cornea transplant procedures are successful. But cornea transplant carries a small risk of complications, such as rejection of the donor cornea. ",
-        "image": "/images/service-images/service-6.jpg"
+        "image": "https://i.ibb.co/qpgZhR4/chittagong-hill-track.jpg"
     }
 ]
