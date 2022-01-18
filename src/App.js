@@ -4,7 +4,9 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home/Home';
+import ServiceDetail from './components/Home/ServiceDetail/ServiceDetail';
 import Login from './components/Login/Login/Login';
+import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import Register from './components/Login/Register/Register';
 import NotFound from './components/NotFound/NotFound';
 import AuthProvider from './context/AuthProvider';
@@ -32,6 +34,10 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
+
+            <PrivateRoute path="/servicedetail/:serviceId">
+              <ServiceDetail></ServiceDetail>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>
