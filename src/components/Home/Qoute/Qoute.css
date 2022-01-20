@@ -1,0 +1,17 @@
+.qoute-img {
+    background-image: url(http://travelicious.bold-themes.com/main-demo/wp-content/uploads/sites/2/2018/09/bgn-quote-end.jpg);
+    background-position: 30% ;
+    width: 100%;
+    height: 510px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin-bottom: 30px;
+    
+  
+}
+.quote-text{
+   color: white;
+   font-family: Montserrat;
+   font-weight: 600;
+   margin-top: 30px;
+}

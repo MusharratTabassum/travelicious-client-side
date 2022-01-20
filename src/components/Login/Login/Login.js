@@ -1,13 +1,26 @@
 import React, { useEffect } from 'react';
 import "./Login.css"
-import { Link } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import useAuth from '../../../Hooks/useAuth';
 
+
 const Login = () => {
     const { handleGoogleSignIn, handleEmailChange, handlePasswordChange,
         error, handleUserLogin, handleResetPassword } = useAuth();
+
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_url = location.state?.from || "/";
+
+
+    const handleGoogleLoginProcess = () => {
+        handleGoogleSignIn()
+            .then(result => {
+                history.push(redirect_url);
+            })
+    }
 
 
     useEffect(() => {
@@ -39,7 +52,7 @@ const Login = () => {
                         </button>
                         <p className='color' >OR</p>
 
-                        <button onClick={handleGoogleSignIn} type="button" className='reset'><b>Continue with google</b></button>
+                        <button onClick={handleGoogleLoginProcess} type="button" className='reset'><b>Continue with google</b></button>
                         <p className='color mt-2'>Create an account now <Link className='reset' to="/register">Register</Link></p>
                         <p className='color'>Forget your password?
                             <button onClick={handleResetPassword} className='reset'>Reset</button>
