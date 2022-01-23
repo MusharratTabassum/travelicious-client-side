@@ -1,5 +1,6 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Button, Table } from 'react-bootstrap';
+import { Alert, Button, Table } from 'react-bootstrap';
 import useAuth from '../../Hooks/useAuth';
 
 
@@ -14,8 +15,30 @@ const MyBookings = () => {
             .then(data => setBookings(data));
     }, [])
 
+
     const myBookings = bookings.filter(booking => booking.email == user.email);
     console.log(myBookings);
+
+    const handleDeleteBooking = id => {
+        const proceed = window.confirm('Are you sure, you want to delete your booking?');
+        if (proceed) {
+            const url = `http://localhost:5000/bookings/${id}`;
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.deletedCount > 0) {
+                        alert('deleted successfully');
+                        const remainingBookings = bookings.filter(booking => booking._id !== id);
+                        setBookings(remainingBookings)
+                    }
+                });
+        }
+        else {
+            alert("not working")
+        }
+    }
 
 
     return (
@@ -45,12 +68,7 @@ const MyBookings = () => {
                                     <td>{booking.title}</td>
                                     <td>{booking.email}</td>
                                     <td>{booking.Date}</td>
-                                    <Button
-                                        // onClick={() => handleDelete(booking._id)}
-                                        className="btn bg-info p-2"
-                                    >
-                                        Delete
-                                    </Button>
+                                    <button onClick={() => handleDeleteBooking(booking._id)}>X</button>
                                 </tr>
                             </tbody>
                         ))}
