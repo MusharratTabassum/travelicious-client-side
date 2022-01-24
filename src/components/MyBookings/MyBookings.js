@@ -1,7 +1,7 @@
-import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Alert, Button, Table } from 'react-bootstrap';
+import { Table } from 'react-bootstrap';
 import useAuth from '../../Hooks/useAuth';
+
 
 
 const MyBookings = () => {
@@ -29,7 +29,7 @@ const MyBookings = () => {
                 .then(res => res.json())
                 .then(data => {
                     if (data.deletedCount > 0) {
-                        alert('deleted successfully');
+                        alert('The booking is deleted successfully!');
                         const remainingBookings = bookings.filter(booking => booking._id !== id);
                         setBookings(remainingBookings)
                     }
@@ -57,6 +57,7 @@ const MyBookings = () => {
                                 <th>Tour Place</th>
                                 <th>Email</th>
                                 <th>Date of Tour</th>
+                                <th>Status</th>
                                 <th>Delete/Update</th>
                             </tr>
                         </thead>
@@ -68,6 +69,7 @@ const MyBookings = () => {
                                     <td>{booking.title}</td>
                                     <td>{booking.email}</td>
                                     <td>{booking.Date}</td>
+                                    <td>{booking.status}</td>
                                     <button onClick={() => handleDeleteBooking(booking._id)}>X</button>
                                 </tr>
                             </tbody>

@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
 import AddService from './components/AddService/AddService';
+import AllBookings from './components/AllBookings/AllBookings';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
@@ -13,6 +14,7 @@ import Register from './components/Login/Register/Register';
 import ManageBooking from './components/ManageBooking/ManageBooking';
 import MyBookings from './components/MyBookings/MyBookings';
 import NotFound from './components/NotFound/NotFound';
+import UpdateBookingStatus from './components/UpdateBookingStatus/UpdateBookingStatus';
 import AuthProvider from './context/AuthProvider';
 
 
@@ -41,21 +43,30 @@ function App() {
             <PrivateRoute path="/addService">
               <AddService></AddService>
             </PrivateRoute>
-            <PrivateRoute path="/bookings">
+            <PrivateRoute exact path="/bookings">
               <MyBookings></MyBookings>
+            </PrivateRoute>
+            <PrivateRoute exact path="/allbookings">
+              <AllBookings></AllBookings>
             </PrivateRoute>
             <PrivateRoute path="/managebooking">
               <ManageBooking></ManageBooking>
             </PrivateRoute>
+            <Route path="/bookings/update/:id">
+              <UpdateBookingStatus></UpdateBookingStatus>
+            </Route>
             <Route path="/register">
               <Register></Register>
             </Route>
             <PrivateRoute path="/servicedetail/:serviceId">
               <ServiceDetail></ServiceDetail>
             </PrivateRoute>
+
+
             <Route path="*">
               <NotFound></NotFound>
             </Route>
+
           </Switch>
           <Footer></Footer>
         </BrowserRouter>

@@ -25,7 +25,7 @@ const ServiceserviceDetail = () => {
 
 
     const onSubmit = data => {
-        console.log('Ordered data',data);
+        console.log('Ordered data', data);
         axios.post('http://localhost:5000/bookings', data)
             .then(res => {
                 if (res.data.insertedId) {
@@ -62,6 +62,7 @@ const ServiceserviceDetail = () => {
                             <input type="text"  {...register("title", { required: true })} placeholder="Booked Package" defaultValue={chosenData?.title} />
                             <input type="text" {...register("name", { required: true, maxLength: 20 })} placeholder="Name" defaultValue={user.displayName} />
                             <input type="email" {...register("email", { required: true })} placeholder="Email" defaultValue={user.email} />
+                            <input type="text" {...register("status", { required: true })} defaultValue="pending" />
                             <input type="number" {...register("phone", { required: true })} placeholder="01*******" />
                             <input type="text" {...register("address", { required: true })} placeholder="Address" />
                             <input type="date" {...register("Date")} placeholder="Date" />

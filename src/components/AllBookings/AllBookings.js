@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Table } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Table } from 'react-bootstrap';
 
-const ManageBooking = () => {
-
+const AllBookings = () => {
     const [bookings, setBookings] = useState([]);
 
     useEffect(() => {
@@ -11,28 +9,6 @@ const ManageBooking = () => {
             .then(res => res.json())
             .then(data => setBookings(data));
     }, [])
-
-    const handleDeleteBooking = id => {
-        const proceed = window.confirm('Are you sure, you want to delete your booking?');
-        if (proceed) {
-            const url = `http://localhost:5000/bookings/${id}`;
-            fetch(url, {
-                method: 'DELETE'
-            })
-                .then(res => res.json())
-                .then(data => {
-                    if (data.deletedCount > 0) {
-                        alert('The booking is deleted successfully!');
-                        const remainingBookings = bookings.filter(booking => booking._id !== id);
-                        setBookings(remainingBookings)
-                    }
-                });
-        }
-        else {
-            alert("not working")
-        }
-    }
-
     return (
         <div>
             <div className="bookings container ">
@@ -50,7 +26,7 @@ const ManageBooking = () => {
                                     <th>Email</th>
                                     <th>Date of Tour</th>
                                     <th>Status</th>
-                                    <th><th>Delete/Update</th></th>
+
                                 </tr>
                             </thead>
                             {bookings?.map((booking, index) => (
@@ -62,15 +38,6 @@ const ManageBooking = () => {
                                         <td>{booking.email}</td>
                                         <td>{booking.Date}</td>
                                         <td>{booking.status}</td>
-                                        <Button
-
-                                            className="btn bg-info p-2"
-                                            onClick={() => handleDeleteBooking(booking._id)}
-                                        >
-                                            Remove
-                                        </Button>
-                                        <Link to={`/bookings/update/${booking._id}`}><button>Update</button></Link>
-
                                     </tr>
                                 </tbody>
                             ))}
@@ -85,4 +52,4 @@ const ManageBooking = () => {
     );
 };
 
-export default ManageBooking;
+export default AllBookings;
