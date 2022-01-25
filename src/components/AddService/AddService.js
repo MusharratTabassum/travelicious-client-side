@@ -23,9 +23,11 @@ const AddService = () => {
             <div className="add-service">
                 <h2>Please Add a Service</h2>
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <input {...register("title", { required: true, maxLength: 20 })} placeholder="Title" />
-                    <textarea {...register("short_description")} placeholder="A short description" />
+                    <input {...register("title", { required: true, maxLength: 20 })} placeholder="title" />
+                    <textarea {...register("short_description")} placeholder="a short description" />
                     <input type="text" {...register("package_info")} placeholder="package" />
+                    <input type="text" {...register("hotel")} placeholder="hotel" />
+                    <input type="text" {...register("transportation")} placeholder="about transportation" />
                     <input type="number" {...register("price")} placeholder="price" />
                     <input {...register("image")} placeholder="image url" />
                     <input type="submit" />

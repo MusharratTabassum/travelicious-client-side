@@ -33,14 +33,9 @@ const Login = () => {
     return (
         <div >
             <div className='login-background pt-4' >
-                <div data-aos="fade-in"
-                    data-aos-offset="200"
-                    data-aos-delay="20"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="false"
-                    data-aos-anchor-placement="top-center">
+                <div data-aos="zoom-in-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="600">
                     <form className='form-style mt-4' onSubmit={handleUserLogin} >
                         <h1>Login</h1>
                         <input onBlur={handleEmailChange} className='text-input-style' type="email" placeholder="write your email" required />
@@ -50,7 +45,7 @@ const Login = () => {
                         <button type="submit" className="login-btn">
                             Login
                         </button>
-                        <p className='color' >OR</p>
+                        <p className='color'>OR</p>
 
                         <button onClick={handleGoogleLoginProcess} type="button" className='reset'><b>Continue with google</b></button>
                         <p className='color mt-2'>Create an account now <Link className='reset' to="/register">Register</Link></p>

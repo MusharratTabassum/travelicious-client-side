@@ -1,0 +1,40 @@
+.serviceDetail{
+    padding-top: 50px;
+    margin-bottom: 70px;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+.img-size{
+    width: 100%;
+    height: 100%;
+    
+}
+.booking-detail form{
+    padding-left: 10px;
+}
+.booking-detail form input, textarea{
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    padding: 5px;
+}
+.notice{
+    background-color: black;
+    color: #f1e14b;
+    padding: 5%;
+}
+.form-side{
+    background-color: #f1e14b;
+    
+
+}
+.booking-btn{
+    background-color: black;
+    color: #f1e14b;
+    font-size: 18px;
+    font-weight: 500;
+}
+.package-info{
+    border-radius: 5%;
+    border: 1px solid green;
+}

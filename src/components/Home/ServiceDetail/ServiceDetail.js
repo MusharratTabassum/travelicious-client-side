@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
+import "./ServiceDetail.css"
 
 import axios from 'axios';
 import { useForm } from "react-hook-form";
+import AOS from 'aos';
 
 
 const ServiceserviceDetail = () => {
@@ -24,6 +26,15 @@ const ServiceserviceDetail = () => {
     const chosenData = serviceDetail.find(item => item._id === serviceId);
 
 
+    useEffect(() => {
+        AOS.init(
+            {
+
+            }
+        )
+    }, [])
+
+
     const onSubmit = data => {
         console.log('Ordered data', data);
         axios.post('http://localhost:5000/bookings', data)
@@ -38,43 +49,60 @@ const ServiceserviceDetail = () => {
     }
 
     return (
-        <div>
+        <div >
             <div className='container '>
-
-                <div className='serviceDetail pe-2 mt-5 mb-4 d-flex'>
-                    <div className="w-50" >
-                        <img className='img-fluid w-100 h-100' src={chosenData?.image} alt="" />
-                    </div >
-                    <div className="w-50 text-start ms-4">
-                        <h1 className="mt-1 mb-2">{chosenData?.title}</h1>
-                        <p className=''>{chosenData?.short_description}</p>
-                        <p className=''>Package : {chosenData?.package_info}</p>
-                        <p className=''>Price : {chosenData?.price}tk only</p>
-                        <button>Check Out</button>
+                <div className='serviceDetail '>
+                    <div className='row'>
+                        <div className="col-12 col-lg-6" data-aos="flip-left" >
+                            <img className='img-fluid img-size  mb-4' src={chosenData?.image} alt="" />
+                        </div >
+                        <div className="col-12 col-lg-6 notice text-start p-4" data-aos="flip-right">
+                            <h2 className=" mb-3">{chosenData?.title}</h2>
+                            <p className=''>{chosenData?.short_description}</p>
+                            <h6 className='mt-4 mb-2'>Package : {chosenData?.package_info}</h6>
+                            <h6 className=''>Price : {chosenData?.price}tk/Person</h6>
+                        </div>
                     </div>
-
                 </div>
+            </div>
+            <h1>What's Next??</h1>
+            {/**Service && Booking part */}
+            <div className="ms-2 me-3 mb-5">
+                <div className=' mt-5' >
+                    <div className=' row mt-5'>
+                        <div className='notice col-lg-6 text-start' >
+                            <h2 className="mb-5">Notice</h2>
+                            <p className="mt-5"># We have NO HIDDEN COST / CHARGE</p>
+                            <p># All price subject to availability</p>
+                            <p># All package for 2 person minimum</p>
+                            <p># Any date available. (Please mention journey dates to check)</p>
+                            <p># Price may increase during the blackout period ( Religious or national holidays, conference or fairs, world events )</p>
+                            <p># Custom package available </p>
+                        </div>
+                        <div className="form-side col-lg-6 p-4 me-0 " >
 
-                <div>
-                    <div className="add-service">
-                        <h2>Confirm your booking</h2>
-                        <form onSubmit={handleSubmit(onSubmit)}>
-                            <input type="text"  {...register("title", { required: true })} placeholder="Booked Package" defaultValue={chosenData?.title} />
-                            <input type="text" {...register("name", { required: true, maxLength: 20 })} placeholder="Name" defaultValue={user.displayName} />
-                            <input type="email" {...register("email", { required: true })} placeholder="Email" defaultValue={user.email} />
-                            <input type="text" {...register("status", { required: true })} defaultValue="pending" />
-                            <input type="number" {...register("phone", { required: true })} placeholder="01*******" />
-                            <input type="text" {...register("address", { required: true })} placeholder="Address" />
-                            <input type="date" {...register("Date")} placeholder="Date" />
-                            <input type="submit" />
-                        </form>
+                            <div className='booking-detail'>
+                                <h2 className="mb-3">Book The Tour</h2>
+                                <form onSubmit={handleSubmit(onSubmit)}>
+                                    <input type="text"  {...register("title", { required: true })} placeholder="Booked Package" defaultValue={chosenData?.title} />
+                                    <input type="text" {...register("name", { required: true, maxLength: 20 })} placeholder="Name" defaultValue={user.displayName} />
+                                    <input type="email" {...register("email", { required: true })} placeholder="Email" defaultValue={user.email} />
+                                    <input type="text" {...register("status", { required: true })} defaultValue="pending" />
+                                    <input type="number" {...register("phone", { required: true })} placeholder="01*******" />
+                                    <input type="number" {...register("person-no", { required: true })} placeholder="No. of person to go" />
+                                    <input type="text" {...register("address", { required: true })} placeholder="Address" />
+                                    <input type="date" {...register("Date")} placeholder="Date" />
+                                    <input className='booking-btn' type="submit" value="Book" />
+                                </form></div>
+
+                        </div>
                     </div>
                 </div>
             </div>
 
 
 
-        </div>
+        </div >
     );
 };
 

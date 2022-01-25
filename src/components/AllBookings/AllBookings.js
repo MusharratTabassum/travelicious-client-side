@@ -23,7 +23,6 @@ const AllBookings = () => {
                                     <th>#</th>
                                     <th>BookingID</th>
                                     <th>Tour Place</th>
-                                    <th>Email</th>
                                     <th>Date of Tour</th>
                                     <th>Status</th>
 
@@ -35,7 +34,7 @@ const AllBookings = () => {
                                         <td>{index + 1}</td>
                                         <td>{booking._id}</td>
                                         <td>{booking.title}</td>
-                                        <td>{booking.email}</td>
+
                                         <td>{booking.Date}</td>
                                         <td>{booking.status}</td>
                                     </tr>
