@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css'
 
 const Footer = () => {
@@ -16,27 +17,28 @@ const Footer = () => {
                     </div>
                     <div className="footer-item col-lg-2 col-md-6">
                         <ul> <b><h4>Cities</h4></b></ul>
-                        <ul>Cox's Bazar</ul>
-                        <ul>Sajek</ul>
-                        <ul>Kuakata</ul>
-                        <ul>Sreemongol</ul>
-                        <ul>Saint Martine</ul>
+                        <ul>Chittagong</ul>
+                        <ul>Potuakhali</ul>
+                        <ul>Sylhet</ul>
+                        <ul>Rangamati</ul>
+
                     </div>
                     <div className="footer-item col-lg-2 col-md-6">
                         <ul> <b><h4>Interests</h4></b></ul>
-                        <ul>Cox's Bazar</ul>
-                        <ul>Sajek</ul>
-                        <ul>Kuakata</ul>
-                        <ul>Sreemongol</ul>
-                        <ul>Saint Martine</ul>
+                        <ul>Adventure</ul>
+                        <ul>Family Holidays</ul>
+                        <ul>Festivals</ul>
+                        <ul>Budget Travels</ul>
+                        <ul>Backpacking</ul>
                     </div>
                     <div className="footer-item col-lg-2 col-md-6">
                         <ul> <b><h4>About</h4></b></ul>
-                        <ul>Cox's Bazar</ul>
-                        <ul>Sajek</ul>
-                        <ul>Kuakata</ul>
-                        <ul>Sreemongol</ul>
-                        <ul>Saint Martine</ul>
+                        <ul><Link className='link-undo'>Travelicious</Link></ul>
+                        <ul><Link className='link-undo'>Tour prices</Link></ul>
+                        <ul><Link className='link-undo'>Testimonials</Link></ul>
+                        <ul><Link className='link-undo'>Contact us</Link></ul>
+
+
                     </div>
                     <div className="footer-item col-lg-4 col-md-6">
                         <div>

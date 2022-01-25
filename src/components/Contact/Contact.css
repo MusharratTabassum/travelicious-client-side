@@ -1,0 +1,45 @@
+.contact-background{
+ 
+        background: url('./beach-2836300_960_720.webp');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        padding-bottom: 6%;    
+
+}
+.form-styles{
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 100px;
+    padding: 45px 10px;
+}
+.form-styles textarea{
+    min-height: 150px;
+}
+.info{
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+    box-shadow: 100px;
+    width: 80%;
+    height: 28%;
+    padding: 30px;
+    margin: 20px;
+}
+.icon{
+    color:  #f1e14b;
+    font-size:45px;
+    padding: 2px;
+}
+.icon-info{
+    padding-left: 5%;
+}
+.white{
+color: white;
+}
+.yellow{
+    color:#f1e14b ;
+
+}

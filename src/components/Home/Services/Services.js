@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import useServices from '../../../Hooks/useServices';
 import Service from '../Service/Service';
 import './Services.css'
+import AOS from 'aos';
+
 
 const Services = () => {
     const [services, setServices] = useState([])
@@ -12,9 +14,17 @@ const Services = () => {
             .then(data => setServices(data));
     }, [])
 
+    useEffect(() => {
+        AOS.init(
+            {
+
+            }
+        )
+    }, [])
+
     return (
-        <div>
-            <div className="container">
+        <div id="tours">
+            <div className="container" data-aos="zoom-in-up">
                 <h1 className="mt-5 mb-5 service-title">Travelicious's Services</h1>
                 <div className="row row-cols-1 row-cols-md-3 g-4 mb-5">
                     {

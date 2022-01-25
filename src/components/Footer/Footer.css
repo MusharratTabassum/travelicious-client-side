@@ -38,3 +38,12 @@ b{
     margin-bottom: 0px;
     font-family:cursive;
 }
+
+.link-undo{
+    
+    color: white;
+    text-decoration: none;
+}
+.link-undo:hover{
+    color: #fff;
+}

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import useAuth from '../../Hooks/useAuth';
+import "./MyBookings.css"
 
 
 
@@ -70,7 +71,7 @@ const MyBookings = () => {
                                     <td>{booking.email}</td>
                                     <td>{booking.Date}</td>
                                     <td>{booking.status}</td>
-                                    <button onClick={() => handleDeleteBooking(booking._id)}>X</button>
+                                    <button className='delete-btn' onClick={() => handleDeleteBooking(booking._id)}>Remove</button>
                                 </tr>
                             </tbody>
                         ))}

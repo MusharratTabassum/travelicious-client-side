@@ -2,6 +2,8 @@ import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
+import { HashLink } from 'react-router-hash-link';
+
 import "./Header.css"
 
 const Header = () => {
@@ -21,7 +23,7 @@ const Header = () => {
                             navbarScroll
                         >
                             <Nav.Link className='header-link' as={Link} to='/home'>Home</Nav.Link>
-                            <Nav.Link className='header-link' as={Link} to='/about'>About</Nav.Link>
+                            <Nav.Link className='header-link' as={HashLink} to="/home#tours">Tours</Nav.Link>
                             <Nav.Link className='header-link' as={Link} to='/contact' >Contact</Nav.Link>
 
                             <Nav.Link className='header-link'>

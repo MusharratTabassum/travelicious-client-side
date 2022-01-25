@@ -1,0 +1,12 @@
+.delete-btn{
+    background-color:yellow !important;
+    color: black;
+    font-weight: 500;
+    padding: 7px;
+    margin: 2px;
+    border-radius: 7px;
+}
+.delete-btn:hover{
+    background-color: yellow;
+    color: black;
+}

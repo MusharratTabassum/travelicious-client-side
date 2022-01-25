@@ -59,7 +59,7 @@ const ServiceserviceDetail = () => {
                         <div className="col-12 col-lg-6 notice text-start p-4" data-aos="flip-right">
                             <h2 className=" mb-3">{chosenData?.title}</h2>
                             <p className=''>{chosenData?.short_description}</p>
-                            <h6 className='mt-4 mb-2'>Package : {chosenData?.package_info}</h6>
+                            <h6 className='mt-4 mb-2'>Duration : {chosenData?.package_info}</h6>
                             <h6 className=''>Price : {chosenData?.price}tk/Person</h6>
                         </div>
                     </div>

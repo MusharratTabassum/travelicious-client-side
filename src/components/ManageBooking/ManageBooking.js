@@ -29,7 +29,7 @@ const ManageBooking = () => {
                 });
         }
         else {
-            alert("not working")
+            alert("The booking is not removed.")
         }
     }
 
@@ -63,13 +63,12 @@ const ManageBooking = () => {
                                         <td>{booking.Date}</td>
                                         <td>{booking.status}</td>
                                         <Button
-
-                                            className="btn bg-info p-2"
+                                            className="delete-btn"
                                             onClick={() => handleDeleteBooking(booking._id)}
                                         >
                                             Remove
                                         </Button>
-                                        <Link to={`/bookings/update/${booking._id}`}><button>Update</button></Link>
+                                        <Link to={`/bookings/update/${booking._id}`}><button className='update-btn'>Update</button></Link>
 
                                     </tr>
                                 </tbody>

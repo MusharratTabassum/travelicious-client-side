@@ -12,11 +12,15 @@
 .booking-detail form{
     padding-left: 10px;
 }
-.booking-detail form input, textarea{
+.booking-detail form input{
     width: 80%;
     margin-bottom: 10px;
     border-radius: 7px;
     padding: 5px;
+}
+.booking-detail form textarea{
+    width: 50%;
+
 }
 .notice{
     background-color: black;
