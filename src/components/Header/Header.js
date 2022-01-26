@@ -13,7 +13,7 @@ const Header = () => {
         <div>
             <Navbar expand="lg" className='header' sticky="top">
                 <Container fluid className='mx-4' >
-                    <Navbar.Brand href="/" className='banner-logo'>Travelicious
+                    <Navbar.Brand href="/" className='banner-logo'>TraveliciousBD
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">

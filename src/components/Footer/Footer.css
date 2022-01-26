@@ -11,8 +11,7 @@ footer{
 .footer-item{
     text-align:left ;
     padding: 12px;
-    font-family:cursive;
-    line-height: 1.75em;
+    font-family: "Poppins",sans-serif;    line-height: 1.75em;
     font-weight: 400;
     padding: 24px;
     color: white;
@@ -23,7 +22,8 @@ footer{
     color: black;
     border: none;
     padding: 8px 30px;
-    font-family:cursive;    font-weight: 700;
+    font-family: "Poppins",sans-serif;
+      font-weight: 700;
 }
 .subscribe-button:hover{
     background-image: linear-gradient(to bottom, #f1e14b 50%,rgba(255, 255, 255, 0.651) 100%);
@@ -36,7 +36,7 @@ b{
     color: #f1e14b;
     background-color: black;
     margin-bottom: 0px;
-    font-family:cursive;
+    font-family: "Poppins",sans-serif;
 }
 
 .link-undo{
@@ -46,4 +46,10 @@ b{
 }
 .link-undo:hover{
     color: #fff;
+}
+.icon-font{
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #f1e14b;
 }

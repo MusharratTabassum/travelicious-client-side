@@ -11,10 +11,10 @@
     padding: 5px;
 }
 .add-service input[submit]{
-    background-color: yellow;
+    background-color:  #f1e14b;
   }
 .service{
     background-color: rgba(0, 0, 0, 0.747);
-    color: yellow;
+    color:  #f1e14b;
     padding: 5%;
 }

@@ -1,0 +1,14 @@
+.Intouch-bg{
+    background-color: rgba(255, 255, 112, 0.582);
+    padding: 4%;
+    margin-top: 10%;
+    margin-bottom: 6%;
+}
+.butt{
+    background-color: #131313;
+    color: #f1e14b;
+    border: none;
+    padding: 8px 30px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 700;
+}

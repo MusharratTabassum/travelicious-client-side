@@ -1,13 +1,17 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
-import Qoute from '../Qoute/Qoute';
 import Services from '../Services/Services';
+import Faq from '../Faq/Faq';
+import InTouch from '../InTouch/InTouch';
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
             <Services></Services>
-            <Qoute></Qoute>
+            <InTouch></InTouch>
+            <Faq></Faq>
+
+
 
         </div>
     );

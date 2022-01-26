@@ -36,7 +36,6 @@ const ServiceserviceDetail = () => {
 
 
     const onSubmit = data => {
-        console.log('Ordered data', data);
         axios.post('http://localhost:5000/bookings', data)
             .then(res => {
                 if (res.data.insertedId) {
@@ -58,9 +57,10 @@ const ServiceserviceDetail = () => {
                         </div >
                         <div className="col-12 col-lg-6 notice text-start p-4" data-aos="flip-right">
                             <h2 className=" mb-3">{chosenData?.title}</h2>
-                            <p className=''>{chosenData?.short_description}</p>
-                            <h6 className='mt-4 mb-2'>Duration : {chosenData?.package_info}</h6>
-                            <h6 className=''>Price : {chosenData?.price}tk/Person</h6>
+                            <p className='white'>{chosenData?.short_description}</p>
+                            <h6 className='mt-4 white mb-2'>Duration : {chosenData?.duration}</h6>
+                            <h6 className='white'>{chosenData?.price}tk/Person</h6>
+                            <p className='white'>Price : {chosenData?.package_brief}</p>
                         </div>
                     </div>
                 </div>

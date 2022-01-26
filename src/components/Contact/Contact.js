@@ -11,7 +11,7 @@ const Contact = () => {
     const phoneIcon = <FontAwesomeIcon icon={faPhoneAlt} />
 
 
-    //EmailJs
+    //EmailJs 
 
     const form = useRef();
 
@@ -40,7 +40,7 @@ const Contact = () => {
         <div className='contact-background  '>
             <div className='pt-4 gx-0 d-flex align-items-center justify-content-center'>
                 <div className='w-50'>
-                    <h1 >Contact Us</h1>
+                    <h1 className='service-title'>Contact Us</h1>
                     <h6 className='m-4'>Incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications.</h6>
                 </div>
 
