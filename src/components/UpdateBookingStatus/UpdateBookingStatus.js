@@ -9,7 +9,7 @@ const UpdateBookingStatus = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/bookings/${id}`;
+        const url = `https://murmuring-beyond-96223.herokuapp.com/bookings/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setBooking(data));
@@ -26,7 +26,7 @@ const UpdateBookingStatus = () => {
 
     const handleUpdateStatus = (e) => {
 
-        const url = `http://localhost:5000/bookings/${id}`;
+        const url = `https://murmuring-beyond-96223.herokuapp.com/bookings/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

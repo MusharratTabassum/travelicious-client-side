@@ -11,7 +11,7 @@ const MyBookings = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        fetch('http://localhost:5000/bookings')
+        fetch('https://murmuring-beyond-96223.herokuapp.com/bookings')
             .then(res => res.json())
             .then(data => setBookings(data));
     }, [])
@@ -23,7 +23,7 @@ const MyBookings = () => {
     const handleDeleteBooking = id => {
         const proceed = window.confirm('Are you sure, you want to delete your booking?');
         if (proceed) {
-            const url = `http://localhost:5000/bookings/${id}`;
+            const url = `https://murmuring-beyond-96223.herokuapp.com/bookings/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

@@ -3,10 +3,8 @@ import { Carousel } from 'react-bootstrap';
 import slideImg1 from './images/slideImg1.jpg'
 import slideImg2 from './images/slideImg2.jpg'
 import slideImg3 from './images/slideImg3.jpg'
-import slideImg4 from './images/slideImg4.jpg'
 import slideImg5 from './images/slideImg5.jpg'
 import slideImg6 from './images/slideImg6.jpg'
-import slideImg7 from './images/slideImg7.jpg'
 import slideImg8 from './images/slideImg8.jpg'
 
 const Banner = () => {

@@ -18,7 +18,7 @@ const ServiceserviceDetail = () => {
     const { register, handleSubmit, reset } = useForm();
 
     useEffect(() => {
-        fetch("http://localhost:5000/services")
+        fetch("https://murmuring-beyond-96223.herokuapp.com/services")
             .then((res) => res.json())
             .then((data) => setServiceDetail(data));
     }, []);
@@ -36,7 +36,7 @@ const ServiceserviceDetail = () => {
 
 
     const onSubmit = data => {
-        axios.post('http://localhost:5000/bookings', data)
+        axios.post('https://murmuring-beyond-96223.herokuapp.com/bookings', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Thanks! We will contact with you soon.');
