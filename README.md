@@ -13,13 +13,13 @@ It Allows user to create an account, book packages and delete them.Email/passwor
 ```http
   https://murmuring-beyond-96223.herokuapp.com/services
 ```
-#### Get all bookings
+#### Get all booking
 
 ```http
   https://murmuring-beyond-96223.herokuapp.com/bookings
 ```
 
-#### Get booking
+#### Get bookings
 
 ```http
   https://murmuring-beyond-96223.herokuapp.com/bookings/${id}
@@ -55,7 +55,12 @@ It Allows user to create an account, book packages and delete them.Email/passwor
 - MongoDb
 - Heroku
 - Firebase Authentication
-- Firebase Hosting
 
 
+
+
+## Admin Login Credential
+
+Email : admin123@gmail.com
+Password : AdmiN12
 
