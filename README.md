@@ -1,7 +1,7 @@
 
 # Travelicious BD Limited 
 Overview : Travelicious BD Limited is a full stack travel agency website with dynamic functions and responsive design.Users of two roles can interact with the system by using the web frontend.As data source, NoSQL database is used (MongoDB).
-It Allows user to create an account, book packages and delete them.Email/password and Google firebase authentication has been added.The backend services are deployed on Heroku.The frontend is deployed on firebase. All the services and UI are done using Node Express and React js.
+It allows user to create an account, book packages and delete them.Email/password and Google firebase authentication has been added.The backend services are deployed on Heroku.The frontend is deployed on firebase. All the services and UI are done using Node Express and React js.
 ## Live Link
 [Travelicious BD Limited](https://travelicious-bd-limited.web.app/)
 
