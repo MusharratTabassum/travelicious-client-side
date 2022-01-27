@@ -55,6 +55,7 @@ It Allows user to create an account, book packages and delete them.Email/passwor
 - MongoDb
 - Heroku
 - Firebase Authentication
+- Firebase Hosting
 
 
 
