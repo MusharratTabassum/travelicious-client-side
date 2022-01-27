@@ -1,6 +1,5 @@
 import React from 'react';
 import { useEffect, useState } from "react";
-import useServices from '../../../Hooks/useServices';
 import Service from '../Service/Service';
 import './Services.css'
 import AOS from 'aos';
