@@ -13,7 +13,7 @@ It Allows user to create an account, book packages and delete them.Email/passwor
 ```http
   https://murmuring-beyond-96223.herokuapp.com/services
 ```
-#### Get all booking
+#### Get all bookings
 
 ```http
   https://murmuring-beyond-96223.herokuapp.com/bookings
