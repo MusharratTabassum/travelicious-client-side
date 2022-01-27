@@ -51,7 +51,7 @@ It allows user to create an account, book packages and delete them.Email/passwor
 - React Js
 - React Router Dom
 - React Bootstrap
-- Bootstrap 5
+- EmailJS
 - MongoDb
 - Heroku
 - Firebase Authentication
